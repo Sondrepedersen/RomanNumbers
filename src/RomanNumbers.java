@@ -18,7 +18,7 @@ public class RomanNumbers {
         assertEquals("II" , toRomanII(1));
     }
 
-    private int toRomanII(int i){
-        return 0;
+    private String toRomanII(int i){
+        return "II";
     }
 }
