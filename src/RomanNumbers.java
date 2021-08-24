@@ -13,5 +13,12 @@ public class RomanNumbers {
         return "I";
     }
 
+    @Test
+    void shouldConvert2ToII (){
+        assertEquals("II" , toRomanII(1));
+    }
 
+    private int toRomanII(int i){
+        return 0;
+    }
 }
