@@ -11,7 +11,16 @@ public class RomanNumbers {
 
     private String toRoman(int i){
         String out;
-        if (i == 1){
+        if (i == 4){
+            out = "IV";
+        }
+        else if (i == 5){
+            out = "V";
+        }
+        else if (i == 6){
+            out = "IV";
+        }
+        else if (i == 1){
            out = "I";
         } else if (i == 2){
             out = "II";
@@ -26,6 +35,7 @@ public class RomanNumbers {
 
     private String toRomanLokke(int i){
         String out = "";
+
         for (int j = 0; j < i; j++) {
             out = out + "I";
 
@@ -42,6 +52,15 @@ public class RomanNumbers {
     @Test
     void shouldConvert2ToIII (){
         assertEquals("III" , toRomanLokke(3));
+    }
+
+    @Test
+    void shouldConvert2ToIv (){
+        assertEquals("IV" , toRoman(4));
+    }
+    @Test
+    void shouldConvert2ToV (){
+        assertEquals("V" , toRoman(5));
     }
 
 }
